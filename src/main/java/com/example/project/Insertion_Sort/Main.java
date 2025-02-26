@@ -1,12 +1,16 @@
 package com.example.project.Insertion_Sort;
 
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
-        int[] arr = {5, 2, 9, 1, 5};
-        int[] expected = {1, 2, 5, 5, 9};
-        arr = InsertionSort.insertionSort(arr);
-        for (int i = 0; i < arr.length; i++) {
-            System.out.println(arr[i]);
-        }
+        int[] arrA = {4,9,10,11,15,21,28,30,31,32,33,43,53,66,77,78,81,83,93,95};
+        InsertionSort.selectionSort(arrA);
+        System.out.println(Arrays.toString(arrA));
+        System.out.println();
+        int[] arrB = {4,9,10,11,15,21,28,30,31,32,33,43,53,66,77,78,81,83,93,95};
+        InsertionSort.insertionSort(arrB);
+        System.out.println(Arrays.toString(arrB));
+
     }
 }
